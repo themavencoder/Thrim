@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ *Creator: Tobiloba Adejumo on 2/25/19 11:53 AM Last modified: 2/25/19 11:53 AM Copyright: All rights reserved Ⓒ 2019
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~   you may not use this file except in compliance with the License.
+  ~   You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+  ~    Unless required by applicable law or agreed to in writing, software distributed under
+  ~    the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+  ~    OF ANY KIND, either express or implied. See the License for the specific language governing
+  ~    permissions and limitations under the License.
+  ~ */
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eight_dp"
+
+            android:layout_marginTop="28dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/thirty_four_sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_man"
+            android:layout_gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/textview_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="8dp"
+            android:text="Adewale Joshua"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/textview_view_profile"
+            android:layout_marginTop="4dp"
+
+            android:text="@string/view_profile"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sixteen_sp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_account_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="32dp"
+                android:drawableRight="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Account Details"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="13dp" />
+
+            <View
+                android:id="@+id/view_account_details"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/textview_account_details"
+                android:background="@color/view_color"/>
+
+
+            <TextView
+                android:id="@+id/textview_delivery_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/view_account_details"
+                android:layout_marginTop="24dp"
+                android:drawableRight="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Delivery Information"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="13dp" />
+            <View
+                android:id="@+id/view_delivery_information_"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/textview_delivery_information"
+                android:background="#a9a9a9"/>
+            <TextView
+                android:id="@+id/textview_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/view_delivery_information_"
+                android:layout_marginTop="24dp"
+                android:drawableRight="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Notification"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="13dp" />
+            <View
+                android:id="@+id/view_notification"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/textview_notification"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/textview_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/view_notification"
+                android:layout_marginTop="24dp"
+                android:drawableRight="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Settings"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="13dp" />
+            <View
+                android:id="@+id/view_settings"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/textview_settings"
+                android:background="@color/grey"/>
+            <TextView
+                android:id="@+id/textview_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/view_settings"
+                android:layout_marginTop="24dp"
+                android:drawableRight="@drawable/arrow"
+                android:drawablePadding="16dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginRight="13dp" />
+            <View
+                android:id="@+id/view_prvacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/textview_privacy_policy"
+                android:background="@color/grey"/>
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SpaceAm</string>
+    <string name="first_name"><font size="15">First Name</font></string>
+    <string name="email_address"><font size="15">Email Address</font></string>
+    <string name="address"><font size="15">Address</font></string>
+    <string name="password"><font size="15">Password</font></string>
+    <string name="confirm_password"><font size="15">Confirm Password</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_profile">View Profile</string>
+    <string name="browse">Browse</string>
+    <string name="change">Change</string>
+</resources>
